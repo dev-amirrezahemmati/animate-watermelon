@@ -1,0 +1,308 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery.js"></script>
+    <title>loader 2</title>
+    <style>
+        body {
+            background-color: #141e30;
+        }
+
+        body>div {
+            height: 100vh;
+            width: 100%;
+            background-color: #141e30;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        body>div>div {
+            position: relative;
+        }
+
+        #div-header {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: relative;
+            right: 90px;
+            top: 200px;
+        }
+
+        #div-child-1 {
+            border-top: 20px solid lime;
+            border-right: 20px solid lime;
+            border-radius: 100%;
+            height: 200px;
+            animation: animation-one 10s infinite;
+        }
+
+
+        @keyframes animation-one {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .div-child-child-1 {
+            border-radius: 50%;
+            background-color: black;
+            width: 10px;
+            height: 10px;
+            position: relative;
+        }
+
+        .div-child-child-1:nth-child(1) {
+            left: 50px;
+            top: 20px;
+        }
+
+        .div-child-child-1:nth-child(2) {
+            left: 80px;
+            top: 30px;
+        }
+
+        .div-child-child-1:nth-child(3) {
+            left: 20px;
+            top: 40px;
+        }
+
+        .div-child-child-1:nth-child(4) {
+            left: 60px;
+            top: 30px;
+        }
+
+        .div-child-child-1:nth-child(5) {
+            left: 80px;
+            top: 50px;
+        }
+
+        .div-child-child-1:nth-child(6) {
+            left: 60px;
+            top: 90px;
+        }
+
+        .div-child-child-1:nth-child(7) {
+            left: 25px;
+            top: 40px;
+        }
+
+        .div-child-child-1:nth-child(8) {
+            left: 120px;
+            top: 3px;
+        }
+
+        .div-child-child-1:nth-child(9) {
+            left: 120px;
+            top: -50px;
+        }
+
+        .div-child-child-1:nth-child(10) {
+            left: 130px;
+            top: 40px;
+        }
+
+        .div-child-child-1:nth-child(11) {
+            left: 145px;
+        }
+
+        .div-child-child-1:nth-child(12) {
+            left: 160px;
+            top: -50px;
+        }
+
+        .div-child-child-1:nth-child(13) {
+            left: 90px;
+            top: 10px;
+        }
+
+        #d1 {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            z-index: 1000;
+            left: 110px;
+            border-radius: 50%;
+            background: lime;
+            padding-right: 10px;
+            top: 200px;
+        }
+
+        .add-animation {
+            animation: animation-one 5s infinite;
+        }
+
+        .main {
+            background-color: white;
+            width: 17px;
+            opacity: 0.6;
+            margin-top: 10px;
+            position: relative;
+            border-radius: 20px
+        }
+
+        .main:nth-child(1) {
+            top: -10px;
+            left: 90px;
+            height: 200px;
+        }
+
+        .main:nth-child(2) {
+            top: -205px;
+            left: 40px;
+            height: 170px;
+        }
+
+        .main:nth-child(3) {
+            top: -390px;
+            height: 180px;
+            left: 135px;
+        }
+
+        #blank-1 {
+            border-left: 2px solid white;
+            height: 200px;
+            position: relative;
+            top: 0;
+            left: 212px;
+        }
+
+        .animation-top {
+            position: relative;
+            margin-top: 430px;
+            transition: margin-top 5s
+        }
+
+        .bg-dark {
+            width: 250px;
+            height: 250px;
+            position: relative;
+            bottom: 150px;
+            z-index: 3000;
+            border-radius: 0 0 30px 30px;
+            display: flex;
+            justify-content: center        
+            }
+
+        .all {
+            transform: rotate(180deg);
+            transition: transform 1s
+        }
+
+        .watermelon {
+            margin-top: 685px;
+        }
+
+        #watermelon {
+            background-color: #141e30;
+            width: 100%;
+            height: 100px;
+        }
+
+        #vis{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="buttton" class="btn btn-danger btn-block">هندونه مخام</button>
+    <div>
+        <div id="blank-1" class="blank"></div>
+        <div id="d1">
+            <div class="main"></div>
+            <div class="main"></div>
+            <div class="main"></div>
+        </div>
+        <div>
+            <div id="div-header">
+                <div id="div-child-1">
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                    <div class="div-child-child-1">
+
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="vis">
+        <div class="bg-dark d-flex flex-wrap align-content-center">
+            <h2 class="text-success">
+                در حال آماده سازی
+            </h2>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("html , body").scrollTop(0)
+            $("h2").hide();
+            $("button:button").click(function () {
+                $("h2").show();
+                $("#d1 , #div-header").addClass("animation-top");
+                $("html , body").animate({
+                    scrollTop: 400
+                }, 4100, function () {
+                    $("h2 , .bg-dark").addClass("all")
+                    $("#div-header").addClass("watermelon")
+                    if ($("#div-header").hasClass("watermelon")) {
+                        $("h2").text("اتمام کار")
+                    }
+                    $('button').text('به طرف هندوانه')
+                })
+            })
+        });
+    </script>
+    <div id="div-footer">
+
+    </div>
+</body>
+
+</html>
