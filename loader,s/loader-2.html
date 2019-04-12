@@ -1,4 +1,4 @@
-<html lang="en">
+﻿<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -211,12 +211,27 @@
         #vis{
             display: flex;
             justify-content: center;
+            position: relative;
+            top: 750px;
+            right: 200px;
+        }
+
+        #blank-1{
+            left: 330px;
+        }
+
+        #div-header{
+            left: 30px;
+        }
+        #d1{
+            position: relative;
+            left:230px;
         }
     </style>
 </head>
 
 <body>
-    <button type="buttton" class="btn btn-danger btn-block">هندونه مخام</button>
+    <button type="button" class="btn btn-danger btn-block">هندونه مخام</button>
     <div>
         <div id="blank-1" class="blank"></div>
         <div id="d1">
@@ -271,13 +286,12 @@
                 </div>
             </div>
         </div>
-
-    </div>
-    <div id="vis">
-        <div class="bg-dark d-flex flex-wrap align-content-center">
-            <h2 class="text-success">
-                در حال آماده سازی
-            </h2>
+        <div id="vis" class="d-flex justify-content-center">
+            <div class="bg-dark d-flex flex-wrap align-content-center">
+                <h2 class="text-success">
+                    در حال آماده سازی
+                </h2>
+            </div>
         </div>
     </div>
     <script>
